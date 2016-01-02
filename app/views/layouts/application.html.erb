@@ -8,8 +8,14 @@
 </head>
 <body>
 
-  <h1>This is the wrapper file</h1>
-<%= yield %>
+  <%= link_to "Press Page", press_path %>
+  <%= link_to "Home Page", root_path %>
+  <%= link_to "Rules", rules_path %>
+  <%= link_to "News", news_path %>
+  
+  <%= yield %>
+
+  <%= render "welcome/footer" %>
 
 </body>
 </html>
